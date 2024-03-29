@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function History() {
   const [userData2, setUserData2] = useState([]);
@@ -45,7 +46,7 @@ function History() {
 
         const data = await response.json();
         setUserData2(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error fetching history data:", error);
       }
@@ -77,6 +78,7 @@ function History() {
       >
         {userData2 &&
           userData2.map((item, index) => (
+
             <div
               key={index}
               className="Application_History p-4 my-2 flex justify-between items-center cursor-pointer"

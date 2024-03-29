@@ -18,7 +18,7 @@ function Header() {
         if (!response.ok) throw new Error(response.status);
          
         const data = await response.json();
-        console.log(data);  
+        // console.log(data);  
         setUserdata(data);
       } catch (error) {
         console.error("Login first", error);

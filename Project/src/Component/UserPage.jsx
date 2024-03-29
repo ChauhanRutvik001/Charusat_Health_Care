@@ -4,6 +4,7 @@ import History from './UserPage/History';
 import Header from './UserPage/Header';
 import Application from './UserPage/Application';
 import Dashboard from './UserPage/Dashboard';
+// import Pdf from './UserPage/Pdf';
 import { Route, Routes } from 'react-router-dom';
 
 // useEffect(() => {
@@ -40,6 +41,7 @@ function UserPage() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/application" element={<Application />} />
             <Route path="/history" element={<History />} />
+            {/* <Route path="/pdf" element={<Pdf />} /> */}
           </Routes>
         </div>
       </div>

@@ -24,7 +24,7 @@ function Application() {
 
       const data = await response.json();
       setUserData2(data);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.error("Error fetching history data:", error);
     }

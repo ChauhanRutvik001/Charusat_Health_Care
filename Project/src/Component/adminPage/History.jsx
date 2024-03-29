@@ -47,7 +47,7 @@ function History() {
 
         const data = await response.json();
         setUserData2(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error fetching history data:", error);
       }
@@ -58,7 +58,7 @@ function History() {
 
   const updateUserModelStatus = async (id, status) => {
     try {
-      console.log(id);
+      // console.log(id);
       const response = await fetch(
         "http://localhost:5501/api/responce/request",
         {
